@@ -1,4 +1,4 @@
-import jobs from '../data/jobs.json';
+import _jobs from '../data/jobs.json';
 
 type Job = {
 	id: number;
@@ -6,16 +6,18 @@ type Job = {
 	company: string;
 	description: string;
 	url: string;
-	skills: string;
+	skillList: string;
 	todo: string;
 };
+
+// const jobs: Job[] = _jobs as any[];
 
 export const PageJobs = () => {
 	return (
 		<div className="page pageJobs">
 			<div className="jobs">
-				<h2>There are {jobs.length} jobs:</h2>
-				{jobs.map((job) => {
+				<h2>There are {_jobs.length} jobs:</h2>
+				{_jobs.map((job: Job) => {
 					return (
 						<div className="job" key={job.id}>
 							<div className="title">

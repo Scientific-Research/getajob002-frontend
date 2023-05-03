@@ -1,5 +1,15 @@
 import jobs from '../data/jobs.json';
 
+type Job = {
+	id: number;
+	title: string;
+	company: string;
+	description: string;
+	url: string;
+	skills: string;
+	todo: string;
+};
+
 export const PageJobs = () => {
 	return (
 		<div className="page pageJobs">

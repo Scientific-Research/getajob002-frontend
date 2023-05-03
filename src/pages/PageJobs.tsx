@@ -7,7 +7,7 @@ export const PageJobs = () => {
 				<h2>There are {jobs.length} jobs:</h2>
 				{jobs.map((job) => {
 					return (
-						<div className="job">
+						<div className="job" key={job.id}>
 							<div className="title">
 								<a href={job.url} target="_blank">
 									{job.title}

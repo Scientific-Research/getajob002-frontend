@@ -1,4 +1,4 @@
-import _jobs from '../data/jobs.json';
+// import _jobs from '../data/jobs.json';
 
 type Job = {
 	id: number;
@@ -15,7 +15,7 @@ type Job = {
 export const PageJobs = () => {
 	return (
 		<div className="page pageJobs">
-			<div className="jobs">
+			{/* <div className="jobs">
 				<h2>There are {_jobs.length} jobs:</h2>
 				{_jobs.map((job: Job) => {
 					return (
@@ -32,7 +32,7 @@ export const PageJobs = () => {
 						</div>
 					);
 				})}
-			</div>{' '}
+			</div>{' '} */}
 		</div>
 	);
 };
